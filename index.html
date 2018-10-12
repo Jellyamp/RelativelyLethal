@@ -9,13 +9,13 @@
     <script src="TemplateData/UnityProgress.js"></script>  
     <script src="Build/UnityLoader.js"></script>
     <script>
+	  alert("Use Fullscreen for Full Immersion ;-)");
       var gameInstance = UnityLoader.instantiate("gameContainer", "Build/Relativity-WebGL.json", {onProgress: UnityProgress});
     </script>
   </head>
   <body>
-	<h1>Please use fullscreen option at bottom of Unity palyer! (Hit esc to get out of fullscreen)</h1>
     <div class="webgl-content">
-      <div id="gameContainer" style="width: 1920px; height: 1080px"></div>
+      <div id="gameContainer" style="width: 1280px; height: 720px"></div>
       <div class="footer">
         <div class="webgl-logo"></div>
         <div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
